@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #067984, #69b2c2, #a5d6c9);
+    
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+}
+
+.petit{
+    display: none;
+}
+
+.association{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+}
+
+.association p{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.association img{
+    width: 250px;
+    border-radius: 100px;
+}
+
+.cJaune{
+    color: #eed787;
+}
+
+.presentation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+}
+
+.presentation img{
+    width: 30%;
+    display: block;
+}
+
+img.gauche{
+    border-radius: 0 100px 100px 0;
+}
+
+img.droite{
+    border-radius: 100px 0 0 100px;
+}
+
+footer{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer a{
+    margin-top: 20px;
+}
+
+button {
+    --color: #eed787;
+    font-family: inherit;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: transparent;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+   
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 280px;
+    border-radius: 50%;
+}
+   
+button:hover {
+    color: black;
+    cursor: pointer;
+}
+   
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+   
+button:active:before {
+    background: #eed787;
+    transition: background 0s;
+}
+
+@media only screen and (max-width: 1400px) {
+    .association{
+        font-size: 1.6vw;
+    }
+    .presentation{
+        font-size: 1.6vw;
+    }
+    footer{
+        font-size: 1.6vw;
+    }
+    button{
+        font-size: 1.6vw;
+    }
+    .association img{
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .association{
+        font-size: 18px;
+    }
+    .presentation{
+        font-size: 18px;
+        justify-content: center;
+    }
+    footer{
+        font-size: 18px;
+    }
+    button{
+        font-size: 18px;
+    }
+    .association img{
+        width: 20%;
+        margin-bottom: 20px;
+    }
+    .presentation img {
+        display: none;
+    }
+    .petit{
+        margin-top: 20px;
+        display: flex;
+        width: 100%;
+    }
+    .petit img {
+        width: 50%;
+    }
+    #first {
+        border-right: 2px white solid;
+    }
+}
+
+@media only screen and (max-width: 780px) {
+    .association img{
+        width: 150px;
+    }
+}

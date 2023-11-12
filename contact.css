@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100vh;
+}
+
+body{
+    background: linear-gradient(90deg, #067984, #69b2c2, #a5d6c9);
+    
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+    height: 90%;
+}
+
+main{
+    display: flex;
+    height: 100%;
+}
+
+.card{
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+}
+
+.content-card{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.15s ease-out;
+}
+
+.content-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 100%;
+}
+
+.contact{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact img{
+    width: 50px;
+    display: block;
+    transition: all 1s ease-out;
+}
+
+.contact p{
+    margin-left: 20px;
+}
+
+.block-contact{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+#mail a{
+    width: 50px;
+    height: 50px;
+    background-image: url("photos-illustration/email-noir.png");
+    background-size: cover;
+    display: block;
+    transition: all 1s ease-out;
+}
+
+#mail a:hover{
+    background-image: url("photos-illustration/email-blanc.png");
+    transform: translate(0, -10px);
+}
+
+#instagram a{
+    width: 50px;
+    height: 50px;
+    background-image: url("photos-illustration/instagram-noir.png");
+    background-size: cover;
+    display: block;
+    transition: all 1s ease-out;
+}
+
+#instagram a:hover{
+    background-image: url("photos-illustration/instagram-blanc.png");
+    transform: translate(0, -10px);
+}
+
+#tel span{
+    width: 50px;
+    height: 50px;
+    background-image: url("photos-illustration/tel-noir.png");
+    background-size: cover;
+    display: block;
+    transition: all 1s ease-out;
+}
+
+#tel span:hover{
+    background-image: url("photos-illustration/tel-blanc.png");
+    transform: translate(0, -10px);
+}
+
+
+@media only screen and (max-width: 1250px) {
+    .block-contact{
+        font-size: 2vw;
+    }
+    #mail a{
+        width: 40px;
+        height: 40px;
+    }
+    #instagram a{
+        width: 40px;
+        height: 40px;
+    }
+    #tel span{
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .block-contact{
+        font-size: 17px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .block-contact{
+        margin: 20px 0;
+    }
+    .contact{
+        margin-left: 0;
+        padding-left: 20%;
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .block-contact{
+        margin: 20px 0;
+    }
+    .contact{
+        margin-left: 0;
+        padding-left: 10px;
+        width: 100%;
+
+    }
+    #mail a{
+        width: 35px;
+        height: 35px;
+    }
+    #instagram a{
+        width: 35px;
+        height: 35px;
+    }
+    #tel span{
+        width: 35px;
+        height: 35px;
+    }
+    .block-contact{
+        font-size: 15px;
+    }
+    .logo{
+        height: 50%;
+    }
+}

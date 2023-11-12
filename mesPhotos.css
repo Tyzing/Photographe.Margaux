@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(90deg, #067984, #69b2c2, #a5d6c9);
+    
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+    width: 100vw;
+    scroll-behavior: smooth;
+}
+section p{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+}
+.menu a{
+    text-decoration: none;
+    color: #eed787;
+    padding: 10px;
+    border: solid #eed787 2px;
+    width: 400px;
+    text-align: center;
+    margin: 10px 0;
+    border-radius: 20px;
+    transition: all 0.5s ease-out;
+}
+.menu a:hover{
+    width: 450px;
+    background-color: #eed787;
+    color: black;
+}
+.galerie h2{
+    text-align: center;
+    margin: 10px 0;
+}
+.galerie{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.galerie img{
+    display: block;
+    border: solid white 2px;
+}
+.portrait{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.portrait img{
+    width: 15%;
+}
+.paysage{
+    display: flex;
+    justify-content: center;
+}
+.paysage img{
+    width: 25%;
+}
+
+footer{
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    text-align: center;
+}
+
+footer a{
+    margin-top: 20px;
+}
+
+button {
+    --color: #eed787;
+    font-family: inherit;
+    display: inline-block;
+    padding: 10px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 17px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: var(--color);
+    background-color: transparent;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+   
+button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 280px;
+    border-radius: 50%;
+}
+   
+button:hover {
+    color: black;
+    cursor: pointer;
+}
+   
+button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+}
+   
+button:hover:before {
+    top: -30px;
+    left: -30px;
+}
+   
+button:active:before {
+    background: #eed787;
+    transition: background 0s;
+}
+
+@media only screen and (max-width: 650px) {
+    .portrait{
+        flex-direction: column;
+    }
+    .portrait img{
+        width: 100%;
+    }
+    .paysage{
+        flex-direction: column;
+    }
+    .paysage img{
+        width: 100%;
+    }
+    .menu a{
+        width: 300px;
+    }
+    .menu a:hover{
+        width: 350px;
+    }
+    .menu{
+        font-size: 17px;
+    }
+    section p {
+        font-size: 17px;
+    }
+}

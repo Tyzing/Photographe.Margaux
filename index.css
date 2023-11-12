@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(90deg, #067984, #69b2c2, #a5d6c9);
+    
+    font-family: 'IBM Plex Mono', monospace;
+    position: relative;
+}
+
+
+
+section.premiere{
+    height: 90vh;
+    display: flex;
+    width: 100%;
+}
+
+.container-photo{
+    height: 100%;
+    width: 50%;
+}
+
+.container-photo img{
+    height: 100%;
+    display: block;
+    border-right: 4px white solid;
+}
+
+.container{
+    max-width: 800px;
+    padding:30px;
+    margin: auto;
+  }
+  #text{
+    font-size: 35px;
+  }
+  #text:after{
+    content: "";
+    animation: clignote 0.7s infinite linear;
+    width: 2px;
+    height: 2.2rem;
+    display: inline-block;
+    background: rgb(14, 15, 22);;
+  }
+  @keyframes clignote {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+  }
+
+  .bulle{
+    display: flex;
+    background-color: white;
+    width: 45%;
+    height: 300px;
+    align-self: center;
+    border-radius: 90px 90px 90px 0;
+  }
+
+  .bulle:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .bulle:hover #text:after{
+    background: rgb(255, 255, 255);;
+  }
+
+  section.deuxieme{
+    width: 100%;
+    display: flex;
+    border-top: 4px white solid;
+    flex-direction: column;
+  }
+
+  div.un{
+    width: 100%;
+    display: flex;
+    border-bottom: 4px white solid;
+  }
+
+  div.deux{
+    width: 100%;
+    display: flex;
+  }
+
+  #texte1{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px white solid;
+  }
+
+  #texte1 p{
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 90px 90px 0 90px ;
+    width: 70%;
+    padding: 30px;
+  }
+
+  #texte1 p:hover{
+    background-color: black;
+    color: white;
+  }
+
+  #photo1{
+    width: 50%;
+    border-left: 2px white solid;
+  }
+
+  #photo1 img{
+    width: 100%;
+    display: block;
+  }
+
+  #texte2{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px white solid;
+  }
+
+  #texte2 p{
+    font-size: 25px;
+    text-align: center;
+    background-color: white;
+    border-radius: 90px;
+    width: 80%;
+    padding: 30px;
+  }
+
+  #texte2 p:hover{
+    background-color: black;
+    color: white;
+  }
+
+  #photo2{
+    width: 50%;
+    border-right: 2px white solid;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div#photo2 img{
+    width: 50%;
+  }
+
+  #border{
+    border-right: 4px white solid;
+  }
+
+  #fleche{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    background-color: black;
+    right: 0;
+    padding: 50px;
+    border-radius: 150px 0 0 0 ;
+    width: 100px;
+  }
+
+  #fleche p{
+    display: none;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+    min-width: 200px;
+  }
+  
+  #fleche:hover{
+    transition: 1s ease-in-out;
+    width: 400px;
+  }
+
+  #fleche img{
+    width: 30px;
+  }
+
+
+
+  #fleche:hover p{
+    transition: all 10s ease-in-out;
+    display: block;
+  }
+
+  #lien{
+    display: flex;
+    text-decoration: none;
+  }
+
+  #fleche:hover img{
+    animation: 1s infinite alternate slide;
+  }
+
+  @keyframes slide {
+    from {
+      translate: 20px;
+    }
+    to {
+      translate: 40px;
+    }
+  }
+
+  @media only screen and (max-width: 1680px) {
+    #text{
+      font-size: 1.5vw;
+    }
+    #text:after{
+      height: 1.2rem;
+    }
+    #texte1 p{
+      font-size: 1.5vw;
+    }
+    #texte2 p{
+      font-size: 1.5vw;
+    }
+    #fleche{
+      padding: 20px;
+    }
+    #fleche p{
+      font-size: 1.5vw;
+      margin-left: 20px;
+      min-width: 200px;
+    }
+    #fleche img{
+      margin-left: 20px;
+      width: 20px;
+    }
+}
+
+@media only screen and (max-width: 990px) {
+  section.premiere{
+    flex-direction: column-reverse;
+    height: 100%;
+  }
+  .container-photo{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container-photo img{
+      height: 100%;
+      border: 4px white solid;
+      border-bottom: 0;
+  }
+  .bulle{
+    height: 150px;
+    margin: 20px 0;
+    width: 400px;
+  }
+  #text{
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  .un {
+    flex-direction: column;
+  }
+  #photo1{
+    width: 100%;
+    border-top: 4px white solid;
+    border-left: 0;
+  }
+  #texte1{
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+  }
+  #texte1 p{
+    width: 500px;
+    font-size: 16px;
+  }
+  .deux{
+    flex-direction: column-reverse;
+  }
+  #photo2{
+    width: 100%;
+    border-right: 0;
+    border-top: 4px white solid;
+  }
+  #texte2{
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+  }
+  #texte2 p{
+    width: 500px;
+    font-size: 16px;
+  }
+  #fleche p{
+    font-size: 16px;
+  }
+}
