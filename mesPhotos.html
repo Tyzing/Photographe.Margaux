@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="mesPhotos.css">
     <link rel="stylesheet" href="header.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Mes Photos</title>
 </head>
 <body>
@@ -25,116 +26,163 @@
             Elles sont triée par thèmes : Sports, Animaux et Paysages
         </p>
         <div class="menu">
-            <a href="#karate">photo de Karaté</a>
-            <a href="#ping">photo de Tennis de table</a>
-            <a href="#animaux">photo d'animaux</a>
-            <a href="#paysage">photo de paysages</a>
+            <a href="#ping">photos de Tennis de table</a>
+            <a href="#animaux">photos d'animaux</a>
+            <a href="#abacart">photos de la compagnie AbacArt</a>
+            <a href="#vtt">photos de VTT</a>
+            <a href="#concert">photos de concert</a>
+            <a href="#karate">photos de Karaté</a>
         </div>
     </section>
     <main>
-        <div class="galerie" id="karate">
-            <h2>Photo de Karaté :</h2>
-            <div class="portrait">
-                <img src="photos/karaté/1.JPG" alt="">
-                <img src="photos/karaté/2.JPG" alt="">
-                <img src="photos/karaté/3.JPG" alt="">
-                <img src="photos/karaté/4.JPG" alt="">
-                <img src="photos/karaté/5.JPG" alt="">
-                <img src="photos/karaté/7.JPG" alt="">
-                <img src="photos/karaté/8.JPG" alt="">
-            </div>
-            <div class="portrait">
-                <img src="photos/karaté/9.JPG" alt="">
-                <img src="photos/karaté/10.JPG" alt="">
-                <img src="photos/karaté/11.JPG" alt="">
-                <img src="photos/karaté/12.JPG" alt="">
-                <img src="photos/karaté/13.JPG" alt="">
-                <img src="photos/karaté/14.JPG" alt="">
-                <img src="photos/karaté/15.JPG" alt="">
-            </div>
-            <div class="paysage">
-                <img src="photos/karaté/16.JPG" alt="">
-                <img src="photos/karaté/17.JPG" alt="">
-                <img src="photos/karaté/18.JPG" alt="">
-                <img src="photos/karaté/19.JPG" alt="">
-            </div>
-            <div class="portrait">
-                <img src="photos/karaté/20.JPG" alt="">
-                <img src="photos/karaté/21.JPG" alt="">
-                <img src="photos/karaté/22.JPG" alt="">
-                <img src="photos/karaté/23.JPG" alt="">
-            </div>
-        </div>
-
+        
         <div class="galerie" id="ping">
-            <h2>Photo de Tennis de table :</h2>
-            <div class="paysage">
-                <img src="photos/ping/1.JPG" alt="">
-                <img src="photos/ping/2.JPG" alt="">
-                <img src="photos/ping/3.JPG" alt="">
-                <img src="photos/ping/4.JPG" alt="">
-            </div>
-            <div class="paysage">
-                <img src="photos/ping/5.JPEG" alt="">
-                <img src="photos/ping/6.JPEG" alt="">
-                <img src="photos/ping/7.JPG" alt="">
-                <img src="photos/ping/8.JPG" alt="">
-            </div>
-            <div class="paysage">
-                <img src="photos/ping/9.JPG" alt="">
-                <img src="photos/ping/10.JPG" alt="">
-                <img src="photos/ping/11.JPG" alt="">
-                <img src="photos/ping/12.JPG" alt="">
-            </div>
-            <div class="paysage">
-                <img src="photos/ping/16.JPG" alt="">
-                <img src="photos/ping/17.JPG" alt="">
-                <img src="photos/ping/18.JPG" alt="">
-            </div>
-            <div class="portrait">
-                <img src="photos/ping/13.JPG" alt="">
-                <img src="photos/ping/14.JPG" alt="">
-                <img src="photos/ping/15.JPG" alt="">
+            <h2>Tennis de table :</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/1.jpeg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/2.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/3.jpeg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/4.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/5.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/6.jpeg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/7.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/8.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/ping/9.JPG" alt="">
+                </div>
             </div>
         </div>
 
         <div class="galerie" id="animaux">
-            <h2>Photo d'animaux :</h2>
-            <div class="paysage">
-                <img src="photos/animaux/1.JPG" alt="">
-                <img src="photos/animaux/2.JPG" alt="">
-                <img src="photos/animaux/3.JPG" alt="">
-                <img src="photos/animaux/4.JPG" alt="">
-            </div>
-            <div class="paysage">
-                <img src="photos/animaux/5.JPG" alt="">
-                <img src="photos/animaux/6.jpg" alt="">
-                <img src="photos/animaux/7.jpg" alt="">
-                <img src="photos/animaux/8.jpg" alt="">
-            </div>
-            <div class="paysage">
-                <img src="photos/animaux/9.JPG" alt="">
-                <img src="photos/animaux/10.JPG" alt="">
-                <img src="photos/animaux/11.JPG" alt="">
+            <h2>Animaux :</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/animaux/1.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/animaux/2.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/animaux/3.jpg" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/animaux/4.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/animaux/5.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/animaux/6.JPG" alt="">
+                </div>
             </div>
         </div>
 
-        <div class="galerie" id="paysage">
-            <h2>Photo de paysages :</h2>
-            <div class="paysage">
-                <img src="photos/paysage/1.jpeg" alt="">
-                <img src="photos/paysage/2.JPG" alt="">
-                <img src="photos/paysage/3.JPG" alt="">
+        <div class="galerie" id="abacart">
+            <h2>Compagnie AbacArt :</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/Edouard/1.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/Edouard/2.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/Edouard/3.JPG" alt="">
+                </div>
             </div>
-            <div class="portrait">
-                <img src="photos/paysage/4.JPG" alt="">
-                <img src="photos/paysage/5.JPG" alt="">
+        </div>
+
+        <div class="galerie" id="vtt">
+            <h2>VTT :</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/VTT/1.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/VTT/2.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/VTT/3.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/VTT/4.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/VTT/5.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/VTT/6.JPG" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="galerie" id="concert">
+            <h2>Concert :</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/concert/1.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/concert/2.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/concert/3.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/concert/4.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/concert/5.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/concert/6.JPG" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="galerie" id="karate">
+            <h2>Karaté :</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/karaté/1.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/karaté/2.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/karaté/3.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/karaté/4.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/karaté/5.JPG" alt="">
+                </div>
+                <div>
+                    <img class="h-auto max-w-full rounded-lg" src="/photos/karaté/6.JPG" alt="">
+                </div>
             </div>
         </div>
     </main>
-    <footer>
+    <footer style="padding: 20px;">
         <p>Vous pouvez me contacter pour un futur partenariat ou simplement pour en savoir plus :</p>
-        <a href="contact.html"><button>Contactez-moi</button></a>
+        <a href="contact.html"><button style="padding: 7px;">Contactez-moi</button></a>
     </footer>
 
 
